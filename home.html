@@ -237,7 +237,8 @@
 <td>	 <img src="" class="pic" id="picc1" border="1"  style="margin-left: auto; width:100%;  margin-right: auto;"  />	
 </td>
 
-<td ><div id="mapCanvas"     ></div>
+<td ><div id="mapCanvas"     ></div><br>
+ <div id="address"></div>
 </td>
 </tr>
 </table><br>
@@ -526,6 +527,8 @@ function updateMarkerPosition(latLng) {
 
 function updateMarkerAddress(str) {
   loc2 = str;
+  
+    document.getElementById('address').innerHTML = str;
 }
 
  function getLocation()
